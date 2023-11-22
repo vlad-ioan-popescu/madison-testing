@@ -17,21 +17,21 @@ public class CheckoutPage extends BasePage {
     }
 
     @FindBy(xpath = "//a[text()='Food']")
-    private WebElement foodMenu;
+    public WebElement foodMenu;
     @FindBy(css = ".product-info button")
-    private WebElement addToCart;
+    public WebElement addToCart;
     @FindBy(id = "city")
-    private WebElement cityCart;
+    public WebElement cityCart;
     @FindBy(id = "postcode")
-    private WebElement postCode;
+    public WebElement postCode;
     @FindBy(css = ".checkout-types.top .button")
-    private WebElement btnProceed;
+    public WebElement btnProceed;
     @FindBy(id = "region_id")
     public WebElement optionRegion;
     @FindBy(id = "billing:region_id")
     public WebElement billingRegion;
 
-    @FindBy(id = "billing:country")
+    @FindBy(id = "billing:country_id")
     public WebElement billingCountry;
     @FindBy(id = "onepage-guest-register-button")
     public WebElement btnRegister;
@@ -80,7 +80,7 @@ public class CheckoutPage extends BasePage {
     public WebElement inputQty;
 
     @FindBy(css = ".product-cart-actions button")
-    private WebElement btnUpdateQty;
+    public WebElement btnUpdateQty;
 
     // methods
     public void getFoodMenu() {
